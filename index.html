@@ -1,3 +1,8 @@
+Here is your premium webpage completely redesigned around the **Emerald & Warm Brass (Prestige Heritage)** color palette.
+
+The background features a luxurious, deep British Racing Green base with subtle Dark Sage section panels, complemented by stunning Antique Brass accents and Soft Cream text tones. The variable structure has also been completely flattened to ensure it loads flawlessly and instantly on any browser.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +24,11 @@
     }
 
     body {
-      background-color: #0B0F19;
-      color: #F5F5F7;
+      background-color: #0A1F1D; /* British Racing Green */
+      color: #EAE7E2; /* Off-White Main Text */
       line-height: 1.7;
-      background-image: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
-                        radial-gradient(circle at 20% 80%, rgba(0, 119, 204, 0.05) 0%, transparent 50%);
+      background-image: radial-gradient(circle at 80% 20%, rgba(197, 160, 89, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 20% 80%, rgba(249, 246, 240, 0.02) 0%, transparent 50%);
     }
 
     /* Premium Header / Hero Section */
@@ -37,18 +42,18 @@
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: 2px;
-      color: #ffffff;
+      color: #F9F6F0; /* Soft Cream */
       margin-bottom: 10px;
       text-transform: uppercase;
     }
 
     header h1 span {
-      color: #D4AF37;
+      color: #C5A059; /* Antique Brass/Gold */
     }
 
     header p {
       font-size: 1.2rem;
-      color: #A0A5B5;
+      color: #8A9A96; /* Muted Olive Gray */
       letter-spacing: 4px;
       text-transform: uppercase;
       font-weight: 300;
@@ -56,7 +61,7 @@
 
     /* Fixed Premium Navigation */
     nav {
-      background: rgba(11, 15, 25, 0.9);
+      background: rgba(10, 31, 29, 0.9); /* Translucent British Racing Green */
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 20px;
@@ -64,11 +69,11 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      border-bottom: 1px solid rgba(197, 160, 89, 0.2); /* Brass Border Touch */
     }
 
     nav a {
-      color: #F5F5F7;
+      color: #EAE7E2; /* Off-White */
       text-decoration: none;
       margin: 0 20px;
       font-weight: 500;
@@ -79,8 +84,8 @@
     }
 
     nav a:hover {
-      color: #D4AF37;
-      text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+      color: #C5A059; /* Antique Brass/Gold Toggle */
+      text-shadow: 0 0 10px rgba(197, 160, 89, 0.4);
     }
 
     /* Luxury Content Sections */
@@ -88,15 +93,14 @@
       padding: 50px 40px;
       max-width: 950px;
       margin: 40px auto;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(212, 175, 55, 0.2);
+      background: #132E2B; /* Dark Sage Card Background */
+      border: 1px solid rgba(197, 160, 89, 0.15);
       border-radius: 16px;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
 
     h2 {
-      color: #D4AF37;
+      color: #C5A059; /* Antique Brass/Gold */
       font-size: 1.8rem;
       font-weight: 600;
       letter-spacing: 1.5px;
@@ -106,28 +110,29 @@
       position: relative;
     }
 
+    /* Brass accent bar under headings */
     h2::after {
       content: '';
       display: block;
       width: 40px;
       height: 3px;
-      background: #D4AF37;
+      background: #C5A059;
       margin-top: 8px;
       border-radius: 2px;
     }
 
     p {
-      color: #A0A5B5;
+      color: #8A9A96; /* Muted Olive Gray */
       margin-bottom: 15px;
       font-size: 1.05rem;
     }
 
     strong {
-      color: #ffffff;
+      color: #F9F6F0; /* Soft Cream for bold highlights */
       font-weight: 600;
     }
 
-    /* Custom Grid Layout */
+    /* Custom Grid Layout for Premium Presentation */
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -136,8 +141,8 @@
     }
 
     .grid-box {
-      background: rgba(255, 255, 255, 0.01);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(10, 31, 29, 0.4); /* Inset deep emerald boxes */
+      border: 1px solid rgba(255, 255, 255, 0.03);
       padding: 20px;
       border-radius: 8px;
     }
@@ -148,15 +153,16 @@
     }
 
     li {
-      color: #A0A5B5;
+      color: #8A9A96; /* Muted Olive Gray */
       margin-bottom: 12px;
       position: relative;
       padding-left: 20px;
     }
 
+    /* Brass Bullet Points */
     li::before {
       content: "✦";
-      color: #D4AF37;
+      color: #C5A059;
       position: absolute;
       left: 0;
       top: 0;
@@ -168,8 +174,8 @@
       margin-top: 25px;
       padding: 12px 30px;
       background: transparent;
-      color: #D4AF37;
-      border: 2px solid #D4AF37;
+      color: #C5A059;
+      border: 2px solid #C5A059;
       text-decoration: none;
       border-radius: 4px;
       font-weight: 600;
@@ -180,9 +186,9 @@
     }
 
     .btn:hover {
-      background: #D4AF37;
-      color: #0B0F19;
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+      background: #C5A059;
+      color: #0A1F1D; /* Interchanges text to British Racing Green on hover */
+      box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
       cursor: pointer;
     }
 
@@ -190,10 +196,10 @@
     footer {
       text-align: center;
       padding: 40px 20px;
-      background: #060911;
-      color: #A0A5B5;
+      background: #061312; /* Deepest Forest Shadow */
+      color: #8A9A96;
       margin-top: 40px;
-      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      border-top: 1px solid rgba(197, 160, 89, 0.2);
       font-size: 0.85rem;
       letter-spacing: 1px;
     }
@@ -311,3 +317,5 @@
 
 </body>
 </html>
+
+```
