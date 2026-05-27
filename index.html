@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,4 +109,220 @@
     h2 {
       color: var(--gold-primary);
       font-size: 1.8rem;
-      font-
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+    }
+
+    /* Gold accent bar under headings */
+    h2::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: var(--gold-primary);
+      margin-top: 8px;
+      border-radius: 2px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 15px;
+      font-size: 1.05rem;
+    }
+
+    strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Custom Grid Layout for Premium Presentation */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .grid-box {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* Sleek Lists */
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    /* Gold Bullet Points */
+    li::before {
+      content: "✦";
+      color: var(--gold-primary);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* Premium Button Style */
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: transparent;
+      color: var(--gold-primary);
+      border: 2px solid var(--gold-primary);
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      transition: all 0.4s ease;
+    }
+
+    .btn:hover {
+      background: var(--gold-primary);
+      color: var(--bg-dark);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #060911;
+      color: var(--text-muted);
+      margin-top: 8px;
+      border-top: 1px solid var(--border-glow);
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sushank Kumar <span>Singh</span></h1>
+    <p>The Intersection of Athletic Grit & Intelligence</p>
+  </header>
+
+  <nav>
+    <a href="#about">Philosophy</a>
+    <a href="#basketball">Athletics</a>
+    <a href="#skills">Excellence</a>
+    <a href="#extracurriculars">Innovations</a>
+    <a href="#contact">Connect</a>
+  </nav>
+
+  <section id="about">
+    <h2>The Philosophy</h2>
+    <p>
+      True masterclass demands precision both on the court and inside the terminal. As a student-athlete focusing on <strong>Computer Science and Artificial Intelligence</strong>, I approach building neural networks with the same tactical mindset required to break down an opponent's defense. 
+    </p>
+    <p>
+      My vision is to bridge the physical intuition of competitive basketball with high-compute intelligence, building cutting-edge web environments and machine learning frameworks.
+    </p>
+  </section>
+
+  <section id="basketball">
+    <h2>Athletic Execution</h2>
+    <p>
+      Driven by competitive instinct and refined by relentless training. Basketball is more than a sport—it is an exercise in elite communication, split-second execution, and high-pressure strategy.
+    </p>
+    <div class="grid-container">
+      <div class="grid-box">
+        <strong>Court Leadership</strong>
+        <p>Directing on-court offensive strategies and managing tempo during high-stakes game variations.</p>
+      </div>
+      <div class="grid-box">
+        <strong>Elite Metrics</strong>
+        <p>Combining rigorous daily endurance regimes with precision multi-position spatial tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Core Disciplines</h2>
+    <div class="grid-container">
+      <div>
+        <strong>Computational & AI Architecture</strong>
+        <p style="margin-top: 10px;"></p>
+        <ul>
+          <li>Deep Learning & Predictive Frameworks</li>
+          <li>Advanced Systems Optimization</li>
+          <li>Modern UI/UX Design (HTML5, CSS3, ES6 JavaScript)</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Executive Traits</strong>
+        <p style="margin-top: 10px;"></p>
+        <ul>
+          <li>Calculated Risk-Taking & Decision Making</li>
+          <li>High-Stakes Group Synergy & Teamwork</li>
+          <li>Asymmetric Time Allocation & Discipline</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="extracurriculars">
+    <h2>Innovations</h2>
+    <p>A look into self-directed deep dives where data science meets high-end product engineering.</p>
+    
+    <div class="grid-box" style="margin-bottom: 20px;">
+      <strong>CourtVision.AI (Concept)</strong>
+      <p>A speculative real-time computer vision project processing raw sports camera feeds to map out player fatigue and defensive blindspots instantly.</p>
+    </div>
+
+    <div class="grid-box">
+      <strong>Autonomous Portfolio Matrix</strong>
+      <p>An ultra-performance digital footprint engineered using clean structures, optimized loading protocols, and rich aesthetic typography.</p>
+    </div>
+
+    <a href="#contact" class="btn">Initiate Collaboration</a>
+  </section>
+
+  <section id="contact">
+    <h2>Secured Communications</h2>
+    <p>Available for selective institutional tech projects, elite level scouting, or technical inquiries.</p>
+    <p style="margin-top: 20px;"><strong>Direct Mail:</strong> sushank.singh@premium-domain.com</p>
+    <p><strong>Secure Line:</strong> +91 98765 43210</p>
+    <p><strong>Geographic Base:</strong> India</p>
+  </section>
+
+  <footer>
+    <p>© 2026 SUSHANK KUMAR SINGH. PRODUCED WITH FINEST ATTENTION TO DETAIL.</p>
+  </footer>
+
+</body>
+</html>
+
+```
