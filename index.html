@@ -1,3 +1,4 @@
+<img src="https://via.placeholder.com/180" alt="Sushank Kumar Singh Profile Image">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +20,11 @@
     }
 
     body {
-      background-color: #0A1F1D; /* British Racing Green */
-      color: #EAE7E2; /* Off-White Main Text */
+      background-color: #0A1128; /* Deep Royal Navy */
+      color: #FFFFFF; /* Arctic White Main Text */
       line-height: 1.7;
-      background-image: radial-gradient(circle at 80% 20%, rgba(197, 160, 89, 0.05) 0%, transparent 50%),
-                        radial-gradient(circle at 20% 80%, rgba(249, 246, 240, 0.02) 0%, transparent 50%);
+      background-image: radial-gradient(circle at 80% 20%, rgba(0, 119, 204, 0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 20% 80%, rgba(229, 229, 229, 0.03) 0%, transparent 50%);
     }
 
     /* Premium Header / Hero Section */
@@ -37,18 +38,19 @@
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: 2px;
-      color: #F9F6F0; /* Soft Cream */
+      color: #FFFFFF; /* Arctic White */
       margin-bottom: 10px;
       text-transform: uppercase;
     }
 
     header h1 span {
-      color: #C5A059; /* Antique Brass/Gold */
+      color: #0077CC; /* Electric Royal Blue Highlight */
+      text-shadow: 0 0 15px rgba(0, 119, 204, 0.3);
     }
 
     header p {
       font-size: 1.2rem;
-      color: #8A9A96; /* Muted Olive Gray */
+      color: #7C8BA1; /* Steel Blue Muted Text */
       letter-spacing: 4px;
       text-transform: uppercase;
       font-weight: 300;
@@ -56,7 +58,7 @@
 
     /* Fixed Premium Navigation */
     nav {
-      background: rgba(10, 31, 29, 0.9); /* Translucent British Racing Green */
+      background: rgba(10, 17, 40, 0.9); /* Translucent Deep Royal Navy */
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 20px;
@@ -64,11 +66,11 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 1px solid rgba(197, 160, 89, 0.2); /* Brass Border Touch */
+      border-bottom: 1px solid rgba(0, 119, 204, 0.3); /* Electric Royal Blue Border Touch */
     }
 
     nav a {
-      color: #EAE7E2; /* Off-White */
+      color: #E5E5E5; /* Polished Platinum/Silver */
       text-decoration: none;
       margin: 0 15px;
       font-weight: 500;
@@ -79,8 +81,8 @@
     }
 
     nav a:hover {
-      color: #C5A059; /* Antique Brass/Gold Toggle */
-      text-shadow: 0 0 10px rgba(197, 160, 89, 0.4);
+      color: #0077CC; /* Electric Royal Blue Toggle */
+      text-shadow: 0 0 10px rgba(0, 119, 204, 0.5);
     }
 
     /* Luxury Content Sections */
@@ -88,14 +90,14 @@
       padding: 50px 40px;
       max-width: 950px;
       margin: 40px auto;
-      background: #132E2B; /* Dark Sage Card Background */
-      border: 1px solid rgba(197, 160, 89, 0.15);
+      background: rgba(255, 255, 255, 0.02); /* Translucent Navy Card Background */
+      border: 1px solid rgba(229, 229, 229, 0.08); /* Silver Border */
       border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     }
 
     h2 {
-      color: #C5A059; /* Antique Brass/Gold */
+      color: #E5E5E5; /* Polished Platinum/Silver */
       font-size: 1.8rem;
       font-weight: 600;
       letter-spacing: 1.5px;
@@ -105,26 +107,56 @@
       position: relative;
     }
 
-    /* Brass accent bar under headings */
+    /* Blue highlight bar under headings */
     h2::after {
       content: '';
       display: block;
       width: 40px;
       height: 3px;
-      background: #C5A059;
+      background: #0077CC; /* Electric Royal Blue */
       margin-top: 8px;
       border-radius: 2px;
     }
 
     p {
-      color: #8A9A96; /* Muted Olive Gray */
+      color: #7C8BA1; /* Steel Blue Muted Text */
       margin-bottom: 15px;
       font-size: 1.05rem;
     }
 
     strong {
-      color: #F9F6F0; /* Soft Cream for bold highlights */
+      color: #FFFFFF; /* Arctic White for bold highlights */
       font-weight: 600;
+    }
+
+    /* Profile Layout inside Philosophy Section */
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .profile-frame {
+      flex-shrink: 0;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #0077CC;
+      box-shadow: 0 0 20px rgba(0, 119, 204, 0.4);
+      overflow: hidden;
+      background-color: rgba(10, 17, 40, 0.8);
+    }
+
+    .profile-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile-text {
+      flex-grow: 1;
     }
 
     /* Custom Grid Layout for Premium Presentation */
@@ -136,8 +168,8 @@
     }
 
     .grid-box {
-      background: rgba(10, 31, 29, 0.4); /* Inset deep emerald boxes */
-      border: 1px solid rgba(255, 255, 255, 0.03);
+      background: rgba(255, 255, 255, 0.01); 
+      border: 1px solid rgba(0, 119, 204, 0.15); /* Subtly bordered with highlight blue */
       padding: 20px;
       border-radius: 8px;
     }
@@ -148,16 +180,16 @@
     }
 
     li {
-      color: #8A9A96; /* Muted Olive Gray */
+      color: #7C8BA1; /* Steel Blue */
       margin-bottom: 12px;
       position: relative;
       padding-left: 20px;
     }
 
-    /* Brass Bullet Points */
+    /* Electric Blue Bullet Points */
     li::before {
       content: "✦";
-      color: #C5A059;
+      color: #0077CC;
       position: absolute;
       left: 0;
       top: 0;
@@ -172,17 +204,17 @@
     }
 
     .gallery-item {
-      background: rgba(10, 31, 29, 0.6);
-      border: 1px solid rgba(197, 160, 89, 0.2);
+      background: rgba(10, 17, 40, 0.6);
+      border: 1px solid rgba(229, 229, 229, 0.1);
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
 
     .gallery-item:hover {
       transform: translateY(-5px);
-      border-color: #C5A059;
+      border-color: #0077CC; /* Bright Blue Border on hover */
     }
 
     .gallery-item img {
@@ -190,7 +222,7 @@
       height: 220px;
       object-fit: cover;
       display: block;
-      opacity: 0.85;
+      opacity: 0.8;
       transition: opacity 0.3s ease;
     }
 
@@ -201,10 +233,10 @@
     .gallery-caption {
       padding: 12px;
       font-size: 0.9rem;
-      color: #EAE7E2;
+      color: #E5E5E5;
       text-align: center;
-      background: rgba(19, 46, 43, 0.9);
-      border-top: 1px solid rgba(197, 160, 89, 0.1);
+      background: rgba(10, 17, 40, 0.9);
+      border-top: 1px solid rgba(229, 229, 229, 0.05);
     }
 
     /* Premium Button Style */
@@ -213,8 +245,8 @@
       margin-top: 25px;
       padding: 12px 30px;
       background: transparent;
-      color: #C5A059;
-      border: 2px solid #C5A059;
+      color: #0077CC; /* Electric Royal Blue */
+      border: 2px solid #0077CC;
       text-decoration: none;
       border-radius: 4px;
       font-weight: 600;
@@ -225,9 +257,9 @@
     }
 
     .btn:hover {
-      background: #C5A059;
-      color: #0A1F1D; /* Interchanges text to British Racing Green on hover */
-      box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+      background: #0077CC;
+      color: #0A1128; /* Interchanges text to Deep Royal Navy on hover */
+      box-shadow: 0 0 20px rgba(0, 119, 204, 0.5);
       cursor: pointer;
     }
 
@@ -235,16 +267,21 @@
     footer {
       text-align: center;
       padding: 40px 20px;
-      background: #061312; /* Deepest Forest Shadow */
-      color: #8A9A96;
+      background: #050814; /* Deepest Navy Shadow */
+      color: #7C8BA1;
       margin-top: 40px;
-      border-top: 1px solid rgba(197, 160, 89, 0.2);
+      border-top: 1px solid rgba(0, 119, 204, 0.2);
       font-size: 0.85rem;
       letter-spacing: 1px;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
+      .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
       .grid-container {
         grid-template-columns: 1fr;
       }
@@ -277,11 +314,22 @@
 
   <section id="about">
     <h2>The Philosophy</h2>
-    <p>
-      True masterclass demands precision both on the court and inside the terminal. As a student-athlete focusing on <strong>Computer Science and Artificial Intelligence</strong>, I approach building neural networks with the same tactical mindset required to break down an opponent's defense. 
-    </p>
     
-    <div class="grid-box" style="margin-top: 20px; border-left: 3px solid #C5A059;">
+    <div class="profile-container">
+      <div class="profile-frame">
+        <img src="https://via.placeholder.com/180" alt="Sushank Kumar Singh Profile Image">
+      </div>
+      <div class="profile-text">
+        <p>
+          True masterclass demands precision both on the court and inside the terminal. As a student-athlete focusing on <strong>Computer Science and Artificial Intelligence</strong>, I approach building neural networks with the same tactical mindset required to break down an opponent's defense.
+        </p>
+        <p>
+          My vision is to bridge the physical intuition of competitive basketball with high-compute intelligence, building cutting-edge web environments and machine learning frameworks.
+        </p>
+      </div>
+    </div>
+    
+    <div class="grid-box" style="border-left: 3px solid #0077CC;">
       <strong>Academic Excellence & Benchmarks</strong>
       <p style="margin-top: 5px;">Maintaining rigorous discipline within high-tier academic programs:</p>
       <ul>
@@ -385,5 +433,3 @@
 
 </body>
 </html>
-
-```
