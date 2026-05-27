@@ -71,7 +71,7 @@
     nav a {
       color: #EAE7E2; /* Off-White */
       text-decoration: none;
-      margin: 0 20px;
+      margin: 0 15px;
       font-weight: 500;
       letter-spacing: 1px;
       font-size: 0.9rem;
@@ -164,6 +164,50 @@
       top: 0;
     }
 
+    /* Photo Gallery Layout */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .gallery-item {
+      background: rgba(10, 31, 29, 0.6);
+      border: 1px solid rgba(197, 160, 89, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      border-color: #C5A059;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      opacity: 0.85;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      opacity: 1;
+    }
+
+    .gallery-caption {
+      padding: 12px;
+      font-size: 0.9rem;
+      color: #EAE7E2;
+      text-align: center;
+      background: rgba(19, 46, 43, 0.9);
+      border-top: 1px solid rgba(197, 160, 89, 0.1);
+    }
+
     /* Premium Button Style */
     .btn {
       display: inline-block;
@@ -226,6 +270,7 @@
   <nav>
     <a href="#about">Philosophy</a>
     <a href="#basketball">Athletics</a>
+    <a href="#gallery">Media Gallery</a>
     <a href="#skills">Excellence</a>
     <a href="#extracurriculars">Innovations</a>
     <a href="#contact">Connect</a>
@@ -236,9 +281,15 @@
     <p>
       True masterclass demands precision both on the court and inside the terminal. As a student-athlete focusing on <strong>Computer Science and Artificial Intelligence</strong>, I approach building neural networks with the same tactical mindset required to break down an opponent's defense. 
     </p>
-    <p>
-      My vision is to bridge the physical intuition of competitive basketball with high-compute intelligence, building cutting-edge web environments and machine learning frameworks.
-    </p>
+    
+    <div class="grid-box" style="margin-top: 20px; border-left: 3px solid #C5A059;">
+      <strong>Academic Excellence & Benchmarks</strong>
+      <p style="margin-top: 5px;">Maintaining rigorous discipline within high-tier academic programs:</p>
+      <ul>
+        <li>Current Cumulative GPA: <strong>[Insert Your GPA, e.g., 3.95/4.0]</strong></li>
+        <li>Top Tier School Academic Honor Roll / Achievements</li>
+      </ul>
+    </div>
   </section>
 
   <section id="basketball">
@@ -254,6 +305,28 @@
       <div class="grid-box">
         <strong>Elite Metrics</strong>
         <p>Combining rigorous daily endurance regimes with precision multi-position spatial tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Basketball Portfolio Gallery</h2>
+    <p>Visual logs highlighting court performance, competitive execution, and dynamic team dynamics.</p>
+    
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/600x400" alt="Sushank on Court">
+        <div class="gallery-caption">Game Action Drop-step</div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/600x400" alt="Team Formation">
+        <div class="gallery-caption">Strategic Execution & Team Play</div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/600x400" alt="Pre-game warmups">
+        <div class="gallery-caption">Relentless Training & Conditioning</div>
       </div>
     </div>
   </section>
