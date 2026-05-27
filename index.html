@@ -3,182 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sushank Kumar Singh | Portfolio</title>
+  <title>Sushank Kumar Singh | Executive Portfolio</title>
 
   <style>
+    /* Reset and Core Variables */
     *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    :root {
+      --bg-dark: #0B0F19;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-glow: rgba(212, 175, 55, 0.2);
+      --gold-primary: #D4AF37;
+      --gold-hover: #F3E5AB;
+      --text-main: #F5F5F7;
+      --text-muted: #A0A5B5;
     }
 
     html {
       scroll-behavior: smooth;
     }
 
-    body{
-      background:#f4f4f4;
-      color:#333;
-      line-height:1.6;
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.7;
+      background-image: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 20% 80%, rgba(0, 119, 204, 0.05) 0%, transparent 50%);
     }
 
-    header{
-      background:#0077cc;
-      color:white;
-      padding:40px 20px;
-      text-align:center;
+    /* Premium Header / Hero Section */
+    header {
+      padding: 100px 20px 60px 20px;
+      text-align: center;
+      position: relative;
     }
 
-    nav{
-      background:#005fa3;
-      padding:12px;
-      text-align:center;
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    header h1 span {
+      color: var(--gold-primary);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    /* Fixed Premium Navigation */
+    nav {
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 20px;
+      text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+      border-bottom: 1px solid var(--border-glow);
     }
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:0 15px;
-      font-weight:bold;
+    nav a {
+      color: var(--text-main);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: var(--gold-primary);
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
     }
 
-    section{
-      padding:40px;
-      max-width:900px;
-      margin:auto;
-      background:white;
-      margin-top:20px;
-      border-radius:10px;
-      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    /* Luxury Content Sections */
+    section {
+      padding: 50px 40px;
+      max-width: 950px;
+      margin: 40px auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-glow);
+      border-radius: 16px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
 
-    .profile-img{
-      width:150px;
-      height:150px;
-      border-radius:50%;
-      display:block;
-      margin:20px auto;
-      object-fit:cover;
-      border:4px solid #0077cc;
-    }
-
-    h2{
-      color:#0077cc;
-      margin-bottom:15px;
-      border-bottom: 2px solid #0077cc;
-      padding-bottom: 5px;
-    }
-
-    ul{
-      margin-left:20px;
-      margin-bottom: 15px;
-    }
-
-    li {
-      margin-bottom: 5px;
-    }
-
-    footer{
-      text-align:center;
-      padding:20px;
-      background:#0077cc;
-      color:white;
-      margin-top:40px;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:15px;
-      padding:10px 20px;
-      background:#0077cc;
-      color:white;
-      text-decoration:none;
-      border-radius:5px;
-    }
-
-    .btn:hover{
-      background:#005fa3;
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1>Sushank Kumar Singh</h1>
-    <p>Student-Athlete | Computer Science & AI Enthusiast | Basketball Player</p>
-  </header>
-
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#basketball">Basketball</a>
-    <a href="#skills">Skills</a>
-    <a href="#extracurriculars">Extracurriculars</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="https://via.placeholder.com/150" alt="Sushank Kumar Singh" class="profile-img">
-    <p>
-      Hello! I am <strong>Sushank Kumar Singh</strong>. I am a dedicated student-athlete who balances a passion for high-performance basketball with a deep fascination for technology. My primary academic interests lie in <strong>Computer Science</strong> and <strong>Artificial Intelligence</strong>, and I love exploring how technology can solve complex, real-world problems.
-    </p>
-  </section>
-
-  <section id="basketball">
-    <h2>Basketball</h2>
-    <p>
-      As an athlete, basketball has taught me the value of discipline, teamwork, and resilience. Whether running plays on the court or practicing drills, I bring the same level of focus and drive to my sport as I do to my academic pursuits. 
-    </p>
-    <br>
-    <p><strong>Positions / Achievements:</strong></p>
-    <ul>
-      <li>Active team player focusing on tactical strategy and physical endurance.</li>
-      <li>Applying analytical thinking from competitive sports to my approach to problem-solving in tech.</li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2>Skills & Interests</h2>
-    <p><strong>Technical Interests:</strong></p>
-    <ul>
-      <li>Artificial Intelligence & Machine Learning</li>
-      <li>Foundational Computer Science Concepts</li>
-      <li>Web Development (HTML, CSS, JavaScript)</li>
-    </ul>
-    
-    <p><strong>Athletic & Soft Skills:</strong></p>
-    <ul>
-      <li>Teamwork & Leadership</li>
-      <li>Time Management & Discipline</li>
-      <li>Strategic Thinking & Quick Decision Making</li>
-    </ul>
-  </section>
-
-  <section id="extracurriculars">
-    <h2>Extracurriculars</h2>
-    <p><strong>Sports Analytics Project</strong> - Blending my two passions by analyzing game data to optimize player performance and team strategies.</p>
-    <p><strong>Coding & Tech Clubs</strong> - Participating in school coding initiatives and self-driven AI learning modules.</p>
-    <a href="#" class="btn">View Projects</a>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sushank.singh@example.com</p>
-    <p>Phone: +91 9876543210</p>
-  </section>
-
-  <footer>
-    <p>© 2026 Sushank Kumar Singh | Student-Athlete Portfolio</p>
-  </footer>
-
-</body>
-</html>
+    h2 {
+      color: var(--gold-primary);
+      font-size: 1.8rem;
+      font-
