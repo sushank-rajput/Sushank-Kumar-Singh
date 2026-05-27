@@ -19,11 +19,11 @@
     }
 
     body {
-      background-color: #FBFBFA; /* Pure Alabaster Background */
-      color: #1C1C1C; /* Charcoal/Near Black Main Text */
+      background-color: #070A12; /* Deep Midnight Velvet */
+      color: #FFFFFF; /* Pristine White Main Text */
       line-height: 1.7;
-      background-image: radial-gradient(circle at 80% 20%, rgba(140, 122, 107, 0.04) 0%, transparent 50%),
-                        radial-gradient(circle at 20% 80%, rgba(74, 59, 50, 0.03) 0%, transparent 50%);
+      background-image: radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.07) 0%, transparent 50%),
+                        radial-gradient(circle at 20% 80%, rgba(170, 124, 17, 0.04) 0%, transparent 50%);
     }
 
     /* Premium Header / Hero Section */
@@ -36,27 +36,28 @@
     header h1 {
       font-size: 3rem;
       font-weight: 700;
-      letter-spacing: 3px;
-      color: #1C1C1C;
+      letter-spacing: 2px;
+      color: #FFFFFF; /* Pristine White */
       margin-bottom: 10px;
       text-transform: uppercase;
     }
 
     header h1 span {
-      color: #4A3B32; /* Deep Sculptural Bronze Highlight */
+      color: #FFD700; /* Bright Liquid Gold Highlight */
+      text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
     }
 
     header p {
-      font-size: 1.1rem;
-      color: #9C958F; /* Desert Sand Gray Muted Text */
-      letter-spacing: 5px;
+      font-size: 1.2rem;
+      color: #9499A6; /* Smoked Platinum Muted Text */
+      letter-spacing: 4px;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 300;
     }
 
     /* Fixed Premium Navigation */
     nav {
-      background: rgba(251, 251, 250, 0.9); /* Translucent Alabaster */
+      background: rgba(7, 10, 18, 0.9); /* Translucent Deep Midnight Velvet */
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 20px;
@@ -64,23 +65,23 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 1px solid rgba(74, 59, 50, 0.1); /* Subtle Bronze Border Touch */
+      border-bottom: 1px solid rgba(255, 215, 0, 0.25); /* Liquid Gold Border Touch */
     }
 
     nav a {
-      color: #8C7A6B; /* Soft Taupe */
+      color: #9499A6; /* Smoked Platinum */
       text-decoration: none;
       margin: 0 15px;
       font-weight: 500;
-      letter-spacing: 1.5px;
-      font-size: 0.85rem;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
       text-transform: uppercase;
       transition: all 0.3s ease;
     }
 
     nav a:hover {
-      color: #4A3B32; /* Deep Bronze Toggle */
-      letter-spacing: 2px;
+      color: #FFD700; /* Bright Liquid Gold Toggle */
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
     }
 
     /* Luxury Content Sections */
@@ -88,15 +89,17 @@
       padding: 50px 40px;
       max-width: 950px;
       margin: 40px auto;
-      background: #F5F3EE; /* Warm Ivory Card Background */
-      border: 1px solid rgba(140, 122, 107, 0.15); /* Soft Taupe Border */
-      border-radius: 12px;
-      box-shadow: 0 15px 35px rgba(74, 59, 50, 0.04);
+      background: rgba(255, 255, 255, 0.02); /* Translucent Obsidian Card Background */
+      border: 1px solid rgba(255, 255, 255, 0.05); 
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
     }
 
     h2 {
-      color: #4A3B32; /* Deep Sculptural Bronze */
-      font-size: 1.7rem;
+      color: #FFFFFF; /* Pristine White */
+      font-size: 1.8rem;
       font-weight: 600;
       letter-spacing: 1.5px;
       margin-bottom: 25px;
@@ -105,24 +108,26 @@
       position: relative;
     }
 
-    /* Bronze accent bar under headings */
+    /* Gold highlight bar under headings */
     h2::after {
       content: '';
       display: block;
-      width: 35px;
-      height: 2px;
-      background: #8C7A6B; /* Soft Taupe Accent Line */
+      width: 40px;
+      height: 3px;
+      background: #FFD700; /* Bright Liquid Gold */
       margin-top: 8px;
+      border-radius: 2px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
     }
 
     p {
-      color: #1C1C1C; /* Charcoal Main Text */
+      color: #9499A6; /* Smoked Platinum Muted Text */
       margin-bottom: 15px;
       font-size: 1.05rem;
     }
 
     strong {
-      color: #4A3B32; /* Deep Bronze for highlights */
+      color: #FFFFFF; /* Pristine White for bold highlights */
       font-weight: 600;
     }
 
@@ -139,10 +144,10 @@
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      border: 2px solid #8C7A6B; /* Soft Taupe Frame */
-      box-shadow: 0 8px 20px rgba(74, 59, 50, 0.08);
+      border: 3px solid #FFD700; /* Liquid Gold Frame */
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
       overflow: hidden;
-      background-color: #F5F3EE;
+      background-color: rgba(7, 10, 18, 0.8);
     }
 
     .profile-frame img {
@@ -165,10 +170,14 @@
     }
 
     .grid-box {
-      background: rgba(251, 251, 250, 0.6); /* Semi-clear pure alabaster overlay */
-      border: 1px solid rgba(140, 122, 107, 0.2); 
+      background: rgba(255, 255, 255, 0.005); 
+      border: 1px solid rgba(170, 124, 17, 0.2); /* Subtly bordered with Muted Champagne */
       padding: 20px;
       border-radius: 8px;
+    }
+
+    .grid-box strong {
+      color: #FFD700; /* Accented box title text */
     }
 
     /* Sleek Lists */
@@ -177,19 +186,20 @@
     }
 
     li {
-      color: #1C1C1C;
+      color: #9499A6; /* Smoked Platinum */
       margin-bottom: 12px;
       position: relative;
       padding-left: 20px;
     }
 
-    /* Taupe Bullet Points */
+    /* Liquid Gold Bullet Points */
     li::before {
       content: "✦";
-      color: #8C7A6B;
+      color: #FFD700;
       position: absolute;
       left: 0;
       top: 0;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
     }
 
     /* Photo Gallery Layout */
@@ -201,17 +211,18 @@
     }
 
     .gallery-item {
-      background: #FBFBFA;
-      border: 1px solid rgba(140, 122, 107, 0.2);
+      background: rgba(7, 10, 18, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.05);
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 8px 20px rgba(74, 59, 50, 0.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
 
     .gallery-item:hover {
-      transform: translateY(-4px);
-      border-color: #4A3B32; /* Deep Bronze focus on hover */
+      transform: translateY(-5px);
+      border-color: #FFD700; /* Bright Gold Border on hover */
+      box-shadow: 0 15px 30px rgba(255, 215, 0, 0.15);
     }
 
     .gallery-item img {
@@ -219,22 +230,21 @@
       height: 220px;
       object-fit: cover;
       display: block;
-      filter: sepia(10%) contrast(95%); /* Artistic editorial filter */
-      transition: all 0.3s ease;
+      opacity: 0.75;
+      transition: opacity 0.3s ease;
     }
 
     .gallery-item:hover img {
-      filter: none;
+      opacity: 1;
     }
 
     .gallery-caption {
       padding: 12px;
       font-size: 0.9rem;
-      color: #4A3B32;
+      color: #FFFFFF;
       text-align: center;
-      background: #F5F3EE;
-      border-top: 1px solid rgba(140, 122, 107, 0.15);
-      font-weight: 500;
+      background: rgba(7, 10, 18, 0.9);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     /* Premium Button Style */
@@ -243,21 +253,21 @@
       margin-top: 25px;
       padding: 12px 30px;
       background: transparent;
-      color: #4A3B32; /* Deep Bronze */
-      border: 1.5px solid #4A3B32;
+      color: #FFD700; /* Bright Liquid Gold */
+      border: 2px solid #FFD700;
       text-decoration: none;
       border-radius: 4px;
       font-weight: 600;
       letter-spacing: 2px;
       text-transform: uppercase;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       transition: all 0.4s ease;
     }
 
     .btn:hover {
-      background: #4A3B32;
-      color: #F5F3EE; /* Switches text back to Warm Ivory */
-      box-shadow: 0 10px 20px rgba(74, 59, 50, 0.15);
+      background: #FFD700;
+      color: #070A12; /* Interchanges text to Midnight Velvet on hover */
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
       cursor: pointer;
     }
 
@@ -265,12 +275,12 @@
     footer {
       text-align: center;
       padding: 40px 20px;
-      background: #F5F3EE; 
-      color: #9C958F; /* Desert Sand Gray */
-      margin-top: 60px;
-      border-top: 1px solid rgba(140, 122, 107, 0.2);
-      font-size: 0.8rem;
-      letter-spacing: 1.5px;
+      background: #04060B; /* Deepest Void shadow */
+      color: #9499A6;
+      margin-top: 40px;
+      border-top: 1px solid rgba(170, 124, 17, 0.2);
+      font-size: 0.85rem;
+      letter-spacing: 1px;
     }
 
     /* Responsive Design */
@@ -327,9 +337,9 @@
       </div>
     </div>
     
-    <div class="grid-box" style="border-left: 3px solid #4A3B32;">
+    <div class="grid-box" style="border-left: 3px solid #FFD700;">
       <strong>Academic Excellence & Benchmarks</strong>
-      <p style="margin-top: 5px; color: #9C958F;">Maintaining rigorous discipline within high-tier academic programs:</p>
+      <p style="margin-top: 5px;">Maintaining rigorous discipline within high-tier academic programs:</p>
       <ul>
         <li>Current Cumulative GPA: <strong>[Insert Your GPA, e.g., 3.95/4.0]</strong></li>
         <li>Top Tier School Academic Honor Roll / Achievements</li>
@@ -345,11 +355,11 @@
     <div class="grid-container">
       <div class="grid-box">
         <strong>Court Leadership</strong>
-        <p style="color: #9C958F; margin-top: 5px;">Directing on-court offensive strategies and managing tempo during high-stakes game variations.</p>
+        <p>Directing on-court offensive strategies and managing tempo during high-stakes game variations.</p>
       </div>
       <div class="grid-box">
         <strong>Elite Metrics</strong>
-        <p style="color: #9C958F; margin-top: 5px;">Combining rigorous daily endurance regimes with precision multi-position spatial tracking.</p>
+        <p>Combining rigorous daily endurance regimes with precision multi-position spatial tracking.</p>
       </div>
     </div>
   </section>
@@ -406,12 +416,12 @@
     
     <div class="grid-box" style="margin-bottom: 20px;">
       <strong>CourtVision.AI (Concept)</strong>
-      <p style="color: #9C958F; margin-top: 5px;">A speculative real-time computer vision project processing raw sports camera feeds to map out player fatigue and defensive blindspots instantly.</p>
+      <p>A speculative real-time computer vision project processing raw sports camera feeds to map out player fatigue and defensive blindspots instantly.</p>
     </div>
 
     <div class="grid-box">
       <strong>Autonomous Portfolio Matrix</strong>
-      <p style="color: #9C958F; margin-top: 5px;">An ultra-performance digital footprint engineered using clean structures, optimized loading protocols, and rich aesthetic typography.</p>
+      <p>An ultra-performance digital footprint engineered using clean structures, optimized loading protocols, and rich aesthetic typography.</p>
     </div>
 
     <a href="#contact" class="btn">Initiate Collaboration</a>
