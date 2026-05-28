@@ -194,29 +194,29 @@
     /* Dashboard Metrics Wrapper */
     .metrics-dashboard {
       display: grid;
-      grid-template-columns: 1.2fr 1.8fr;
-      gap: 20px;
+      grid-template-columns: 1.8fr 1.2fr;
+      gap: 25px;
       margin: 25px 0 35px 0;
     }
 
-    /* Achievement Accent Metrics Block */
-    .achievement-column {
-      display: flex;
-      flex-direction: column;
+    /* Achievement Grid Layout */
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 15px;
     }
 
     .achievement-card {
       background: #FFFFFF;
-      border: 1px solid rgba(197, 168, 128, 0.3);
+      border: 1px solid rgba(197, 168, 128, 0.2);
       border-left: 4px solid #C5A880;
       padding: 15px 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
     }
 
     .achievement-card .badge {
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       color: #64748B;
@@ -226,30 +226,30 @@
     }
 
     .achievement-card .title {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: #0F172A;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      line-height: 1.3;
     }
 
-    /* Small Vitals Grid Layout */
-    .vitals-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+    /* Small Vitals Column Layout */
+    .vitals-column {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
     .vital-box {
       background: #FFFFFF;
       border: 1px solid rgba(197, 168, 128, 0.15);
       border-radius: 8px;
-      padding: 20px 10px;
-      text-align: center;
+      padding: 14px 20px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .vital-label {
@@ -258,17 +258,16 @@
       letter-spacing: 1px;
       color: #64748B;
       font-weight: 600;
-      margin-bottom: 5px;
     }
 
     .vital-value {
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: #0F172A;
     }
 
     .vital-value.position-text {
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: #C5A880;
@@ -353,10 +352,10 @@
       }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 950px) {
       .metrics-dashboard {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 20px;
       }
     }
 
@@ -369,6 +368,9 @@
       .grid-container {
         grid-template-columns: 1fr;
       }
+      .achievement-grid {
+        grid-template-columns: 1fr;
+      }
       header h1 {
         font-size: 2.2rem;
       }
@@ -378,10 +380,6 @@
       }
       section {
         padding: 30px 0px;
-      }
-      .vitals-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
       }
     }
   </style></head><body>
@@ -451,27 +449,40 @@
       
       <!-- Metrics Dashboard Component -->
       <div class="metrics-dashboard">
-        <!-- Accolades -->
-        <div class="achievement-column">
+        
+        <!-- Accolades Grid Layout -->
+        <div class="achievement-grid">
           <div class="achievement-card">
-            <span class="badge">Career Distinction</span>
+            <span class="badge">Elite Stratum</span>
             <div class="title">National Player</div>
+          </div>
+          <div class="achievement-card">
+            <span class="badge">ISSO League Apex</span>
+            <div class="title">1x ISSO U16 Winner</div>
           </div>
           <div class="achievement-card">
             <span class="badge">State Tier Apex</span>
             <div class="title">2x State Runner-Up</div>
           </div>
+          <div class="achievement-card">
+            <span class="badge">ISSO Performance</span>
+            <div class="title">1x ISSO U18 2nd Runner-Up</div>
+          </div>
+          <div class="achievement-card" style="grid-column: span 2;">
+            <span class="badge">Regional Consistency</span>
+            <div class="title">2x Second Runner-Up in States</div>
+          </div>
         </div>
         
-        <!-- Small Vital Boxes Grid -->
-        <div class="vitals-grid">
+        <!-- Small Vital Boxes Column -->
+        <div class="vitals-column">
           <div class="vital-box">
             <span class="vital-label">Height</span>
-            <span class="vital-value">195 <span style="font-size: 0.8rem; color: #64748B;">cm</span></span>
+            <span class="vital-value">195 <span style="font-size: 0.75rem; color: #64748B; font-weight: normal;">cm</span></span>
           </div>
           <div class="vital-box">
             <span class="vital-label">Weight</span>
-            <span class="vital-value">79 <span style="font-size: 0.8rem; color: #64748B;">kg</span></span>
+            <span class="vital-value">79 <span style="font-size: 0.75rem; color: #64748B; font-weight: normal;">kg</span></span>
           </div>
           <div class="vital-box">
             <span class="vital-label">Position</span>
