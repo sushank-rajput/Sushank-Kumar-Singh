@@ -17,14 +17,19 @@
     }
 
     body {
-      background-color: #F1F5F9; /* Pure Platinum Slate Base */
-      color: #0F172A; /* Midnight Slate Charcoal Typography */
+      background-color: #F9F6F0; /* Alabaster Base */
+      /* Minimalist architectural structure lines matching the palette */
+      background-image: 
+        linear-gradient(rgba(197, 168, 128, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(197, 168, 128, 0.04) 1px, transparent 1px);
+      background-size: 30px 30px;
+      color: #1A1A1A; /* Caviar Charcoal Typography */
       line-height: 1.7;
     }
 
     /* Fixed Premium Navigation */
     nav {
-      background: rgba(241, 245, 249, 0.9); 
+      background: rgba(249, 246, 240, 0.9); /* Translucent Alabaster */
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       padding: 20px;
@@ -32,11 +37,11 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 1px solid rgba(197, 168, 128, 0.2); 
+      border-bottom: 1px solid rgba(197, 168, 128, 0.25); /* Brushed Gold line */
     }
 
     nav a {
-      color: #475569; 
+      color: #2C2520; /* Midnight Espresso Link Color */
       text-decoration: none;
       margin: 0 15px;
       font-weight: 600;
@@ -47,7 +52,7 @@
     }
 
     nav a:hover {
-      color: #C5A880; /* Muted Champagne Gold Hover */
+      color: #C5A880; /* Brushed Gold Hover */
     }
 
     /* Premium Header / Hero Section */
@@ -61,29 +66,29 @@
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: 2px;
-      color: #0F172A; 
+      color: #1A1A1A; /* Caviar Charcoal */
       margin-bottom: 15px;
       text-transform: uppercase;
     }
 
     header h1 span {
-      color: #C5A880; /* Muted Champagne Gold */
+      color: #C5A880; /* Brushed Gold Accent */
     }
 
     header p {
       font-size: 1.1rem;
-      color: #475569; 
+      color: #2C2520; /* Midnight Espresso secondary typography */
       letter-spacing: 4px;
       text-transform: uppercase;
       font-weight: 400;
     }
 
-    /* Stretched Luxury Content Sections (No Background Fills) */
+    /* Stretched Luxury Content Sections */
     section {
       padding: 40px 0px;
-      max-width: 1100px; /* Stretched wide layout for strong emphasis */
+      max-width: 1100px; 
       margin: 40px auto;
-      border-bottom: 1px solid rgba(197, 168, 128, 0.15); /* Elegant separator line */
+      border-bottom: 1px solid rgba(197, 168, 128, 0.2); /* Elegant separator line */
     }
 
     #contact {
@@ -91,7 +96,7 @@
     }
 
     h2 {
-      color: #0F172A; 
+      color: #2C2520; /* Midnight Espresso Section Titles */
       font-size: 1.8rem;
       font-weight: 600;
       letter-spacing: 1.5px;
@@ -101,7 +106,7 @@
       position: relative;
     }
 
-    /* Champagne highlight bar under headings */
+    /* Brushed Gold highlight bar under headings */
     h2::after {
       content: '';
       display: block;
@@ -113,13 +118,13 @@
     }
 
     p {
-      color: #334155; 
+      color: #1A1A1A; 
       margin-bottom: 15px;
       font-size: 1.05rem;
     }
 
     strong {
-      color: #0F172A; 
+      color: #1A1A1A; 
       font-weight: 600;
     }
 
@@ -136,10 +141,10 @@
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      border: 3px solid #C5A880; 
+      border: 3px solid #C5A880; /* Brushed Gold Frame */
       overflow: hidden;
-      background-color: #FFFFFF;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      background-color: #EFEAE2; /* Linen Base fill */
+      box-shadow: 0 10px 30px rgba(44, 37, 32, 0.05);
     }
 
     .profile-frame img {
@@ -149,7 +154,7 @@
       display: block;
     }
 
-    /* Custom Inner Grid Layout (Stretched Layout) */
+    /* Custom Inner Grid Layout */
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -158,15 +163,15 @@
     }
 
     .grid-box {
-      background: #FFFFFF; /* Stretched data panels */
-      border: 1px solid rgba(197, 168, 128, 0.2); 
+      background: #EFEAE2; /* Linen secondary panel base */
+      border: 1px solid rgba(197, 168, 128, 0.3); 
       padding: 30px; 
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02); 
+      box-shadow: 0 4px 20px rgba(44, 37, 32, 0.02); 
     }
 
     .grid-box strong {
-      color: #C5A880; 
+      color: #2C2520; /* Midnight Espresso titles */
       display: block;
       margin-bottom: 8px;
     }
@@ -177,7 +182,7 @@
     }
 
     li {
-      color: #334155; 
+      color: #1A1A1A; 
       margin-bottom: 12px;
       position: relative;
       padding-left: 20px;
@@ -185,7 +190,7 @@
 
     li::before {
       content: "✦";
-      color: #C5A880;
+      color: #C5A880; /* Brushed Gold element marker */
       position: absolute;
       left: 0;
       top: 0;
@@ -207,9 +212,9 @@
     }
 
     .achievement-card {
-      background: #FFFFFF;
-      border: 1px solid rgba(197, 168, 128, 0.2);
-      border-left: 4px solid #C5A880;
+      background: #EFEAE2; /* Linen Card fill */
+      border: 1px solid rgba(197, 168, 128, 0.3);
+      border-left: 4px solid #C5A880; /* Brushed Gold anchor border */
       padding: 15px 20px;
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
@@ -219,7 +224,7 @@
       font-size: 0.68rem;
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      color: #64748B;
+      color: #2C2520; /* Midnight Espresso text code */
       font-weight: 700;
       display: block;
       margin-bottom: 2px;
@@ -228,7 +233,7 @@
     .achievement-card .title {
       font-size: 1.05rem;
       font-weight: 700;
-      color: #0F172A;
+      color: #1A1A1A; /* Caviar Charcoal text labels */
       text-transform: uppercase;
       letter-spacing: 0.5px;
       line-height: 1.3;
@@ -242,8 +247,8 @@
     }
 
     .vital-box {
-      background: #FFFFFF;
-      border: 1px solid rgba(197, 168, 128, 0.15);
+      background: #EFEAE2; /* Linen Box fill */
+      border: 1px solid rgba(197, 168, 128, 0.25);
       border-radius: 8px;
       padding: 14px 20px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
@@ -256,21 +261,21 @@
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #64748B;
+      color: #2C2520; 
       font-weight: 600;
     }
 
     .vital-value {
       font-size: 1.25rem;
       font-weight: 700;
-      color: #0F172A;
+      color: #1A1A1A;
     }
 
     .vital-value.position-text {
       font-size: 0.95rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      color: #C5A880;
+      color: #C5A880; /* Highlight in Brushed Gold */
     }
 
     /* Gallery Component Layout */
@@ -282,11 +287,11 @@
     }
 
     .gallery-item {
-      background: #FFFFFF;
-      border: 1px solid rgba(197, 168, 128, 0.2);
+      background: #EFEAE2; /* Linen gallery base frame */
+      border: 1px solid rgba(197, 168, 128, 0.3);
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
+      box-shadow: 0 4px 20px rgba(44, 37, 32, 0.02);
       transition: transform 0.3s ease;
     }
 
@@ -305,10 +310,10 @@
     .gallery-caption {
       padding: 15px;
       font-size: 0.95rem;
-      color: #0F172A;
+      color: #1A1A1A;
       text-align: center;
-      background: #FFFFFF;
-      border-top: 1px solid rgba(197, 168, 128, 0.15);
+      background: #EFEAE2;
+      border-top: 1px solid rgba(197, 168, 128, 0.25);
     }
 
     /* Executive Call-To-Action Button */
@@ -317,8 +322,8 @@
       margin-top: 35px;
       padding: 14px 40px;
       background: transparent;
-      color: #C5A880; 
-      border: 2px solid #C5A880;
+      color: #2C2520; 
+      border: 2px solid #2C2520; /* Midnight Espresso structure outline */
       text-decoration: none;
       border-radius: 4px;
       font-weight: 600;
@@ -329,8 +334,8 @@
     }
 
     .btn:hover {
-      background: #C5A880;
-      color: #FFFFFF; 
+      background: #2C2520;
+      color: #F9F6F0; /* Flips color profile onto Alabaster ground */
       cursor: pointer;
     }
 
@@ -338,9 +343,9 @@
     footer {
       text-align: center;
       padding: 60px 20px;
-      background: #FFFFFF; 
-      color: #64748B;
-      border-top: 1px solid rgba(197, 168, 128, 0.15);
+      background: #EFEAE2; /* Linen architectural base panel */
+      color: #2C2520;
+      border-top: 1px solid rgba(197, 168, 128, 0.25);
       font-size: 0.85rem;
       letter-spacing: 1px;
     }
@@ -478,11 +483,11 @@
         <div class="vitals-column">
           <div class="vital-box">
             <span class="vital-label">Height</span>
-            <span class="vital-value">195 <span style="font-size: 0.75rem; color: #64748B; font-weight: normal;">cm</span></span>
+            <span class="vital-value">195 <span style="font-size: 0.75rem; color: #2C2520; font-weight: normal;">cm</span></span>
           </div>
           <div class="vital-box">
             <span class="vital-label">Weight</span>
-            <span class="vital-value">79 <span style="font-size: 0.75rem; color: #64748B; font-weight: normal;">kg</span></span>
+            <span class="vital-value">79 <span style="font-size: 0.75rem; color: #2C2520; font-weight: normal;">kg</span></span>
           </div>
           <div class="vital-box">
             <span class="vital-label">Position</span>
@@ -552,8 +557,8 @@
       <p>Available for selective institutional tech projects, elite level scouting, or technical inquiries.</p>
       
       <div class="grid-box">
-        <p><strong>Direct Mail:</strong> sushank.singh@premium-domain.com</p>
-        <p><strong>Secure Line:</strong> +91 98765 43210</p>
+        <p><strong>Direct Mail:</strong> sushankkumar.singh@corvuss.in</p>
+        <p><strong>Secure Line:</strong> +91 95593 26054</p>
         <p><strong>Geographic Base:</strong> India</p>
       </div>
     </section>
@@ -563,3 +568,4 @@
     <p>© 2026 SUSHANK KUMAR SINGH. PRODUCED WITH FINEST ATTENTION TO DETAIL.</p>
   </footer>
 </body></html>
+
