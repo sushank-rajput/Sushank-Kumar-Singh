@@ -17,11 +17,38 @@
     }
 
     body {
-      background-color: #0A110D; /* Shadow Forest - Base Dark Background */
-      color: #F4F7F5; /* Off-White Linen - Crisp Primary Text */
+      background-color: #0D0D11; /* Deep Obsidian Void Base */
+      color: #F3F4F6; /* Pure Ice White Text */
       line-height: 1.7;
-      background-image: radial-gradient(circle at 80% 20%, rgba(224, 169, 109, 0.05) 0%, transparent 50%),
-                        radial-gradient(circle at 20% 80%, rgba(216, 226, 220, 0.03) 0%, transparent 50%);
+    }
+
+    /* Fixed Premium Navigation */
+    nav {
+      background: rgba(13, 13, 17, 0.85); 
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(229, 193, 88, 0.2); 
+    }
+
+    nav a {
+      color: #D1D5DB; 
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #E5C158; /* Premium Gold Hover */
+      text-shadow: 0 0 10px rgba(229, 193, 88, 0.5);
     }
 
     /* Premium Header / Hero Section */
@@ -35,68 +62,62 @@
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: 2px;
-      color: #F4F7F5; /* Off-White Linen */
+      color: #F3F4F6; 
       margin-bottom: 15px;
       text-transform: uppercase;
     }
 
     header h1 span {
-      color: #E0A96D; /* Autumn Ochre - High-Contrast Accent */
-      text-shadow: 0 0 20px rgba(224, 169, 109, 0.3);
+      color: #E5C158; /* Liquid Gold */
+      text-shadow: 0 0 20px rgba(229, 193, 88, 0.3);
     }
 
     header p {
       font-size: 1.1rem;
-      color: #D8E2DC; /* Eucalyptus Mist - Soft Subtext */
+      color: #9CA3AF; 
       letter-spacing: 4px;
       text-transform: uppercase;
       font-weight: 300;
     }
 
-    /* Fixed Premium Navigation */
-    nav {
-      background: rgba(10, 17, 13, 0.9); /* Translucent Shadow Forest */
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      padding: 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid rgba(224, 169, 109, 0.2); /* Autumn Ochre Border Touch */
-    }
-
-    nav a {
-      color: #D8E2DC; /* Eucalyptus Mist */
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-      letter-spacing: 1px;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #E0A96D; /* Autumn Ochre Toggle */
-      text-shadow: 0 0 10px rgba(224, 169, 109, 0.5);
-    }
-
-    /* Luxury Content Sections */
+    /* Luxury Content Sections - Structural Shared Layout */
     section {
       padding: 50px 40px;
       max-width: 950px;
-      margin: 40px auto;
-      background: #1C2E24; /* Deep Sage - Nested Container Blocks */
-      border: 1px solid rgba(244, 247, 245, 0.05); 
+      margin: 60px auto;
       border-radius: 16px;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      transition: transform 0.4s ease;
+    }
+
+    /* MULTI-BACKGROUND CONFIGURATION (Distinct Custom Premium Color Per Block) */
+    #about {
+      background: #141923; /* Midnight Velvet Blue */
+      border: 1px solid rgba(20, 25, 35, 0.5);
+    }
+    #basketball {
+      background: #1C1622; /* Deep Amethyst Plum */
+      border: 1px solid rgba(28, 22, 34, 0.5);
+    }
+    #highlights {
+      background: #111A16; /* Deep Emerald Shadow */
+      border: 1px solid rgba(17, 26, 22, 0.5);
+    }
+    #skills {
+      background: #1D1814; /* Dark Smoked Cacao Brown */
+      border: 1px solid rgba(29, 24, 20, 0.5);
+    }
+    #extracurriculars {
+      background: #1A1115; /* Deep Mulberry Wine */
+      border: 1px solid rgba(26, 17, 21, 0.5);
+    }
+    #contact {
+      background: #0F1416; /* Dark Slate Teal */
+      border: 1px solid rgba(15, 20, 22, 0.5);
     }
 
     h2 {
-      color: #F4F7F5; /* Off-White Linen */
+      color: #F3F4F6; 
       font-size: 1.8rem;
       font-weight: 600;
       letter-spacing: 1.5px;
@@ -106,30 +127,30 @@
       position: relative;
     }
 
-    /* Ochre highlight bar under headings */
+    /* Premium Gold highlight bar under headings */
     h2::after {
       content: '';
       display: block;
       width: 40px;
       height: 3px;
-      background: #E0A96D; /* Autumn Ochre */
+      background: #E5C158; 
       margin-top: 8px;
       border-radius: 2px;
-      box-shadow: 0 0 10px rgba(224, 169, 109, 0.4);
+      box-shadow: 0 0 10px rgba(229, 193, 88, 0.4);
     }
 
     p {
-      color: #D8E2DC; /* Eucalyptus Mist - Soft Paragraph Copy */
+      color: #D1D5DB; /* Polished Light Gray for body copy */
       margin-bottom: 15px;
       font-size: 1.05rem;
     }
 
     strong {
-      color: #F4F7F5; /* Off-White Linen for bold highlights */
+      color: #F3F4F6; 
       font-weight: 600;
     }
 
-    /* Profile Layout inside Philosophy Section */
+    /* Profile Layout */
     .profile-container {
       display: flex;
       align-items: center;
@@ -142,10 +163,10 @@
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      border: 3px solid #E0A96D; /* Autumn Ochre Frame */
-      box-shadow: 0 0 25px rgba(224, 169, 109, 0.3);
+      border: 3px solid #E5C158; 
+      box-shadow: 0 0 25px rgba(229, 193, 88, 0.25);
       overflow: hidden;
-      background-color: #0A110D;
+      background-color: #0D0D11;
     }
 
     .profile-frame img {
@@ -155,11 +176,7 @@
       display: block;
     }
 
-    .profile-text {
-      flex-grow: 1;
-    }
-
-    /* Custom Grid Layout for Premium Presentation */
+    /* Custom Inner Grid Layout */
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -168,41 +185,40 @@
     }
 
     .grid-box {
-      background: rgba(10, 17, 13, 0.4); /* Dark contrast box fill */
-      border: 1px solid rgba(224, 169, 109, 0.15); /* Subtly bordered with Autumn Ochre */
+      background: rgba(0, 0, 0, 0.25); /* Nested contrast card */
+      border: 1px solid rgba(229, 193, 88, 0.12); 
       padding: 25px;
       border-radius: 8px;
     }
 
     .grid-box strong {
-      color: #E0A96D; /* Accented box title text */
+      color: #E5C158; 
       display: block;
       margin-bottom: 8px;
     }
 
-    /* Sleek Lists */
+    /* Sleek Bulleted Lists */
     ul {
       list-style-type: none;
     }
 
     li {
-      color: #D8E2DC; /* Eucalyptus Mist */
+      color: #D1D5DB; 
       margin-bottom: 12px;
       position: relative;
       padding-left: 20px;
     }
 
-    /* Autumn Ochre Bullet Points */
     li::before {
       content: "✦";
-      color: #E0A96D;
+      color: #E5C158;
       position: absolute;
       left: 0;
       top: 0;
-      text-shadow: 0 0 5px rgba(224, 169, 109, 0.6);
+      text-shadow: 0 0 5px rgba(229, 193, 88, 0.6);
     }
 
-    /* Photo Gallery Layout */
+    /* Gallery Component Layout */
     .gallery-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -211,51 +227,50 @@
     }
 
     .gallery-item {
-      background: #0A110D;
-      border: 1px solid rgba(244, 247, 245, 0.05);
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
 
     .gallery-item:hover {
       transform: translateY(-5px);
-      border-color: #E0A96D; /* Autumn Ochre Border on hover */
-      box-shadow: 0 15px 30px rgba(224, 169, 109, 0.15);
+      border-color: #E5C158; 
+      box-shadow: 0 15px 30px rgba(229, 193, 88, 0.15);
     }
 
-    .gallery-item video, .gallery-item img {
+    .gallery-item img {
       width: 100%;
       height: 220px;
       object-fit: cover;
       display: block;
-      opacity: 0.8;
+      opacity: 0.85;
       transition: opacity 0.3s ease;
-      background: #000;
     }
 
-    .gallery-item:hover img, .gallery-item:hover video {
+    .gallery-item:hover img {
       opacity: 1;
     }
 
     .gallery-caption {
       padding: 12px;
       font-size: 0.9rem;
-      color: #F4F7F5;
+      color: #F3F4F6;
       text-align: center;
-      background: rgba(28, 46, 36, 0.9);
-      border-top: 1px solid rgba(244, 247, 245, 0.05);
+      background: rgba(0, 0, 0, 0.4);
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
     }
 
-    /* Premium Button Style */
+    /* Executive Call-To-Action Button */
     .btn {
       display: inline-block;
       margin-top: 25px;
       padding: 12px 30px;
       background: transparent;
-      color: #E0A96D; /* Autumn Ochre */
-      border: 2px solid #E0A96D;
+      color: #E5C158; 
+      border: 2px solid #E5C158;
       text-decoration: none;
       border-radius: 4px;
       font-weight: 600;
@@ -266,25 +281,25 @@
     }
 
     .btn:hover {
-      background: #E0A96D;
-      color: #0A110D; /* Interchanges text to Shadow Forest on hover */
-      box-shadow: 0 0 25px rgba(224, 169, 109, 0.5);
+      background: #E5C158;
+      color: #0D0D11; 
+      box-shadow: 0 0 25px rgba(229, 193, 88, 0.5);
       cursor: pointer;
     }
 
-    /* Footer */
+    /* Footer Layout */
     footer {
       text-align: center;
-      padding: 40px 20px;
-      background: #050806; /* Darker variant of Shadow Forest for baseline grounding */
-      color: #D8E2DC;
-      margin-top: 40px;
-      border-top: 1px solid rgba(224, 169, 109, 0.15);
+      padding: 50px 20px;
+      background: #070709; 
+      color: #6B7280;
+      margin-top: 60px;
+      border-top: 1px solid rgba(229, 193, 88, 0.1);
       font-size: 0.85rem;
       letter-spacing: 1px;
     }
 
-    /* Responsive Design */
+    /* Responsive Design Optimization */
     @media (max-width: 768px) {
       .profile-container {
         flex-direction: column;
@@ -302,8 +317,8 @@
         margin: 12px 0;
       }
       section {
-        padding: 30px 20px;
-        margin: 20px 15px;
+        padding: 35px 20px;
+        margin: 30px 15px;
       }
     }
   </style></head><body>
@@ -325,7 +340,6 @@
   <main>
     <section id="about">
       <h2>The Philosophy</h2>
-      
       <div class="profile-container">
         <div class="profile-frame">
           <img src="https://via.placeholder.com/180" alt="Sushank Kumar Singh Profile Image">
@@ -340,7 +354,7 @@
         </div>
       </div>
       
-      <div class="grid-box" style="border-left: 3px solid #E0A96D;">
+      <div class="grid-box" style="border-left: 3px solid #E5C158;">
         <strong>Academic Excellence & Benchmarks</strong>
         <p style="margin-top: 5px;">Maintaining rigorous discipline within high-tier academic programs:</p>
         <ul>
@@ -377,12 +391,10 @@
           <img src="https://via.placeholder.com/600x400" alt="Sushank on Court">
           <div class="gallery-caption">Game Action Drop-step</div>
         </div>
-        
         <div class="gallery-item">
           <img src="https://via.placeholder.com/600x400" alt="Team Formation">
           <div class="gallery-caption">Strategic Execution & Team Play</div>
         </div>
-        
         <div class="gallery-item">
           <img src="https://via.placeholder.com/600x400" alt="Pre-game warmups">
           <div class="gallery-caption">Relentless Training & Conditioning</div>
@@ -422,7 +434,6 @@
         <strong>CourtVision.AI (Concept)</strong>
         <p>A speculative real-time computer vision project processing raw sports camera feeds to map out player fatigue and defensive blindspots instantly.</p>
       </div>
-
       <div class="grid-box">
         <strong>Autonomous Portfolio Matrix</strong>
         <p>An ultra-performance digital footprint engineered using clean structures, optimized loading protocols, and rich aesthetic typography.</p>
