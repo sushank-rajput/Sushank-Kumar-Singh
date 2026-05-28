@@ -191,6 +191,41 @@
       top: 0;
     }
 
+    /* Achievement Accent Metrics Block */
+    .achievement-banner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin: 20px 0 35px 0;
+    }
+
+    .achievement-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(197, 168, 128, 0.3);
+      border-left: 4px solid #C5A880;
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    }
+
+    .achievement-card .badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #64748B;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .achievement-card .title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0F172A;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
     /* Gallery Component Layout */
     .gallery-container {
       display: grid;
@@ -322,7 +357,7 @@
           </p>
         </div>
       </div>
-      
+       
       <div class="grid-box" style="border-left: 4px solid #C5A880;">
         <strong>Academic Excellence & Benchmarks</strong>
         <p style="margin-top: 5px;">Maintaining rigorous discipline within high-tier academic programs:</p>
@@ -341,7 +376,7 @@
       </p>
       <div class="grid-container">
         <div class="grid-box">
-          <strong>Court Leadership</strong>
+          Host Strategy & Court Leadership</strong>
           <p>Directing on-court offensive strategies and managing tempo during high-stakes game variations.</p>
         </div>
         <div class="grid-box">
@@ -353,7 +388,19 @@
 
     <section id="highlights">
       <h2>Game Highlights</h2>
-      <p>Visual logs highlighting court performance, competitive execution, and dynamic team dynamics.</p>
+      <p>Elite-tier career accolades alongside visual logs highlighting court performance and strategic execution.</p>
+      
+      <!-- Career Achievements Banner -->
+      <div class="achievement-banner">
+        <div class="achievement-card">
+          <span class="badge">Career Distinction</span>
+          <div class="title">National Player</div>
+        </div>
+        <div class="achievement-card">
+          <span class="badge">State Tier Apex</span>
+          <div class="title">2x State Championship Runner-Up</div>
+        </div>
+      </div>
       
       <div class="gallery-container">
         <div class="gallery-item">
